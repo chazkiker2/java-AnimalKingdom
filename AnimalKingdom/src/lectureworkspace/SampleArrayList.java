@@ -1,8 +1,6 @@
 package lectureworkspace;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 public class SampleArrayList
 {
 
@@ -64,19 +62,49 @@ public class SampleArrayList
 		System.out.println("After adding \"Austin\" element at index 3");
 		System.out.println(cities);
 
+		// use remove(index) to remove an element. All elements after the one removed are moved one index lower
+		cities.remove(3);
+		System.out.println("\nRemoved index 3 so the first \"Austin\"");
+		// We are looping through the elements in the ArrayList
+		// using a For Each loop
+		for (String c : cities)
+		{
+			System.out.println(c);
+		}
 
-		// THE FOLLOWING IS JUST REPEATING THE ABOVE BUT IN MORE EFFICIENT WAYS :)
-		// if you knew which cities you wanted to initialize the constructor with
-		List<String> cities2 = new ArrayList<>(Arrays.asList("Lehi",
-		                                                     "Seattle",
-		                                                     "San Francisco",
-		                                                     "Austin",
-		                                                     "Denver",
-		                                                     "Raleigh",
-		                                                     "New York City"
-		                                                    ));
+		// Since ArrayList do not have a fixed size, we must calculate its size using the method size();
+		System.out.println("\nSize of the ArrayList is " + cities.size());
 
-		//to add multiple elements to an existing List
-		cities2.addAll(Arrays.asList("Austin", "Chicago", "Houston", "Nashville"));
+		// printing the ArrayList using a standard For Loop
+		for (int i = 0; i < cities.size(); i++)
+		{
+			System.out.println("Index: " + i + " Value: " + cities.get(i));
+		}
+
+		System.out.println("\nSort in Alphabetical Order");
+		// Use the Collections.sort(ArrayList) method to sort the ArrayList in ascending order. This actually changes the order of the ArrayList.
+		Collections.sort(cities);
+		for (int i = 0; i < cities.size(); i++)
+		{
+			System.out.println("Index: " + i + " Value: " + cities.get(i));
+		}
+
+		System.out.println("\nSort in Reverse Alphabetical Order");
+		// To sort in descending order, Use the Collections.sort(ArrayList,  Comparator.reverseOrder()) method
+		// This actually changes the order of the ArrayList.
+		cities.sort(Comparator.reverseOrder());
+		for (int i = 0; i < cities.size(); i++)
+		{
+			System.out.println("Index: " + i + " Value: " + cities.get(i));
+		}
+
+		// To clear the ArrayList use clear()
+		// Java would automatically free up the memory allotted to the ArrayList when the ArrayList goes out of scope,
+		// so at the end of this method.
+		System.out.println("\nThe empty ArrayList");
+		cities.clear();
+		System.out.println(cities);
+
+
 	}
 }
