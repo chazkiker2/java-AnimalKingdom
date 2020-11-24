@@ -1,3 +1,5 @@
+package animalkingdom;
+
 public class Fish extends Animal
 {
 	public Fish(

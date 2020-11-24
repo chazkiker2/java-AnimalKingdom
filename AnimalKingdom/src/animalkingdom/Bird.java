@@ -1,6 +1,8 @@
-public class Mammal extends Animal
+package animalkingdom;
+
+public class Bird extends Animal
 {
-	public Mammal(
+	public Bird(
 			String name,
 			int yearDiscovered)
 	{
@@ -10,7 +12,7 @@ public class Mammal extends Animal
 
 	public String move()
 	{
-		return "walk";
+		return "fly";
 	}
 
 	public String breath()
@@ -20,6 +22,6 @@ public class Mammal extends Animal
 
 	public String reproduce()
 	{
-		return "live-births";
+		return "eggs";
 	}
 }

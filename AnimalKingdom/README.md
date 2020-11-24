@@ -1,4 +1,4 @@
-# Project Animal Kingdom Search
+# Project animalkingdom.Animal Kingdom Search
 
 A student that completes this project shows that they can:
 
@@ -22,7 +22,7 @@ Using a combination of abstract classes and lambda expressions, students will cr
 * [ ] Create classes for mammals, birds, fish
   * [ ] Mammals move - walk, breath - lungs, reproduce - live births
   * [ ] Birds move - fly, breath - lungs, reproduce - eggs
-  * [ ] Fish move - swim, breath - gills, reproduce - eggs
+  * [ ] animalkingdom.Fish move - swim, breath - gills, reproduce - eggs
 
 Hint: think about abstract classes and creating an ArrayList using an abstract class type.
 
@@ -50,7 +50,7 @@ Create a collection for the animals using the following data
     | Parrot    | 1824 |
     | Swan      | 1758 |
 
-* [ ] **Fish:**
+* [ ] **animalkingdom.Fish:**
 
     | Name      | Year Named |
     |-----------|------|
