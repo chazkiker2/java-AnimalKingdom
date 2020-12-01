@@ -2,10 +2,15 @@ package lectureworkspace.arrays;
 
 public class MultiDimensionalArr
 {
+	public static void main(String[] args)
+	{
+		twoDim();
+		threeDim();
+	}
 	private static void twoDim()
 	{
 
-		int[][] a = {{1, 2, 3}, {4, 5, 6, 9}, {7},};
+		int[][] a = new int[][] {{1, 2, 3}, {4, 5, 6, 9}, {7},};
 		System.out.println("\n**** TWO DIMENSIONAL ARRAY EXAMPLE ****");
 		System.out.println("int[][] a = {{1,2,3}, {4,5,6,9}, {7}}");
 		System.out.println("\n*** Nested for loop, watch this shit ***");
@@ -28,47 +33,33 @@ public class MultiDimensionalArr
 		}
 
 		System.out.println("\n*** For each loop ***");
-		for (int[] innerArr: a)
+		for (int[] innerArr : a)
 		{
-			for (int data: innerArr)
+			for (int data : innerArr)
 			{
 				System.out.println(data);
 			}
 		}
 
 	}
-
 	private static void threeDim()
 	{
-		int[][][] arr = {
-				{
-						{1, -2, 3},
-						{2, 3, 4}
-				},
-				{
-						{-4, -5, 6, 9},
-						{1},
-						{2, 3}
-				}
-		};
+		int[][][] arr = new int[][][] {{{1, -2, 3}, {2, 3, 4}}, {{-4, -5, 6, 9}, {1}, {2, 3}}};
 
 		System.out.println("\n\n**** THREE DIMENSIONAL ARRAY EXAMPLE ****");
 		System.out.println("int[][][] arr = { \n{ {1, -2, 3}, {2, 3, 4} }, \n{ {-4, -5, 6, 9}, {1}, {2, 3} } \n}");
 
 		// for..each loop to iterate through elements of a 3D array
 		System.out.println("\nfor..each loop to iterate through elements of a 3D array");
-		for(int[][] arr2D: arr) {
-			for (int[] arr1D: arr2D) {
-				for (int el: arr1D) {
+		for (int[][] arr2D : arr)
+		{
+			for (int[] arr1D : arr2D)
+			{
+				for (int el : arr1D)
+				{
 					System.out.println(el);
 				}
 			}
 		}
-	}
-
-	public static void main(String[] args)
-	{
-		twoDim();
-		threeDim();
 	}
 }

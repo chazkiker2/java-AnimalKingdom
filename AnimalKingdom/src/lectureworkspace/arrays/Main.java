@@ -1,8 +1,8 @@
 package lectureworkspace.arrays;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Collections;
+import java.util.Random;
 
 public class Main
 {
@@ -76,7 +76,5 @@ public class Main
 		System.out.println("After ascending sort: " + Arrays.toString(cars));
 		Arrays.sort(cars, Collections.reverseOrder());
 		System.out.println("After descending sort: " + Arrays.toString(cars));
-
-
 	}
 }
