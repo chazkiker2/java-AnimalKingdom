@@ -1,4 +1,4 @@
-package lectureworkspace;
+package lectureworkspace.arraylists;
 
 import java.util.*;
 public class SampleArrayList
